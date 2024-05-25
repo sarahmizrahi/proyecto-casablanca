@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <!--Bootstrap via link porque descagrando los archivos y añadiendo la ruta no me funcionaba-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"></head>
+    <!--Javascript-->
+    <script src="javascript.js"></script>
+    <!--API de Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY&callback=initMap" async defer></script>
+    
+
+
+    <body>
+        <div class="page-container">
+            <!--CABECERA-->
+            <div class="bg-dark">
+                <header>
+                    <p class="text-white">Casablanca</p>
+                    <p id="subtitulo">"Home, sweet home"</p>
+                </header>
+            </div>
+       
+        
+        <!--CABECERA MENU-->
+        <nav id="menu">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" onclick="redireccionarInicio()">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="alojamientos.html" onclick="redireccionarAlojamientos()">Alojamientos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="mapa.html" onclick="redireccionarMapa()">Mapa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html" onclick="redireccionarContacto()">Contacto</a>
+                </li>
+              </ul>
+        </nav>
+
+        <!--INSTRUCCIONES INSERTAR MAPA-->
+        <!--Buscar en google la direccion - Abajo a la derecha,Compartir e insertar mapa - elige el tamaño del mapa que quieres en tu web -
+           copia el código HTML que comienza por <iframe src=..." - Pega este código en tu HTML-->
+            <div id="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2561.1672010332954!2d0.2728969256393107!3d40.23667686154377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2ses!4v1716456447215!5m2!1ses!2ses" 
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+    <footer>
+       <p><a href="avisolegal.html" id="condiciones">Aviso Legal</a>Copyright &copy; 2024 Casablanca. Todos los derechos reservados.</p>
+    </footer>
+</div>
+</body>
+</html>

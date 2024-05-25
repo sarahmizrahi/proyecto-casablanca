@@ -1,0 +1,437 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    line-height: 0.6;
+    height: 130px;
+
+}
+
+
+.text-white {
+    font-weight: bold;
+    font-size: 40pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    letter-spacing: 8px;
+    padding-top: 30px;
+
+}
+#subtitulo {
+    color: rgb(89, 209, 173);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+    word-spacing: 5px;
+}
+
+#menu .nav-link{
+    color: rgb(247, 242, 242); 
+    font-weight: 600;
+}
+
+#menu {
+    background: linear-gradient(to right, rgb(70, 154, 154),  rgb(139, 210, 210));
+
+}
+
+#contenedor-medio {
+    position: relative; 
+    overflow: hidden;
+}
+
+#reservar {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:  rgb(35, 142, 146);
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+input {
+    width: 200px;
+    padding: 10px;
+}
+#botonReservar {
+    font-size: 20px; 
+    width: 100px;
+    font-weight: 600;
+    
+}
+
+#parrafo1 {
+    padding-top: 150px;
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+    float: right;
+    display: inline;
+    text-align: center;
+    font-size: 15pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#cala1 {
+    margin-left: 100px;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#parrafo2 {
+    padding-top: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 50%;
+    margin-right: 50px;
+    float: left;
+    display: inline;
+    text-align: center;
+    font-size: 15pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#foto1  {
+    margin-right: 100px;
+    width: 500px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+
+.page-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background: linear-gradient(to right, rgb(70, 154, 154), rgb(154, 232, 232));
+    padding-top: 20px; 
+    padding-bottom: 20px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    margin: 0; 
+}
+
+#condiciones {
+    color: white;
+    margin-right: 10px; 
+    text-decoration: none;
+}
+
+#map-container {
+    width: 100%;
+    height: 100%; 
+}
+
+#map-container iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*ALOJAMIWENTOS.html*/
+.apartment-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 30px auto;
+    margin-top: 0px;
+    padding: 60px;
+    width: 90%; 
+    height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s;
+    background-color: rgb(233, 230, 230);
+}
+.apartment-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.apartment-card img {
+    width: 230px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.apartment-card .apartment-info {
+    flex: 1;
+}
+.apartment-card .apartment-info h4 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+.apartment-card .apartment-info p {
+    margin: 0;
+    color: #555555;
+}
+.apartment-card .reserve-button {
+    margin-left: 20px;
+    margin-top: auto;
+}
+.carousel-item img {
+    width: 300px; /* Ancho deseado */
+    height: 500px; /* Alto deseado */
+    object-fit: cover;
+}
+
+/*DATOS-RESERVA.html*/
+#datos-reserva .apartment-card {
+    width: 65%;
+    background-color: rgb(233, 230, 230);
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 40px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    height: auto;
+    float: right;
+}
+
+#datos-reserva .apartment-card:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+#datos-reserva .apartment-info {
+    padding: 20px;
+}
+
+#datos-reserva .apartment-description {
+    margin-bottom: 20px;
+}
+
+#datos-reserva .form-group {
+    margin-bottom: 20px;
+}
+
+#datos-reserva .form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+#datos-reserva .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+#datos-reserva .form-control:focus {
+    outline: none;
+    border-color: #6c757d;
+}
+
+#titulo-datos-reserva {
+    margin-top: 0;
+}
+
+#form-datos-reserva .form-group {
+    margin-bottom: 20px;
+}
+
+#form-datos-reserva .form-group label {
+    display: inline-block;
+    width: 100px; /* Ancho fijo para la etiqueta */
+    margin-right: 10px; /* Espacio entre la etiqueta y los campos de entrada */
+}
+
+#form-datos-reserva .input-group {
+    display: inline-flex;
+    align-items: center;
+}
+
+#form-datos-reserva .input-group select {
+    flex: 0 0 150px; /* Ancho fijo para el campo select */
+    margin-right: 5px;
+}
+
+#form-datos-reserva .form-control {
+    flex: 1; /* El campo de entrada ocupa todo el espacio restante */
+    margin-bottom: 0; /* Para evitar que se herede el margen del elemento */
+}
+
+#form-datos-reserva #siguiente-paso {
+    display: block; /* Para que el botón esté en su propia línea */
+    margin-top: 20px; /* Espacio entre el campo de entrada y el botón */
+}
+
+        /*desglose reserva*/
+        aside {
+            width: 30%;
+            background-color: rgb(233, 230, 230);
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 30px;
+            margin-top: auto ;
+            float: left;
+            margin-bottom: 20px;
+            margin-left: 50px;
+            height: 660px;
+        }
+        
+        .booking-summary header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .booking-summary .date-range {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .booking-summary .date-item {
+            flex: 0 0 48%;
+            text-align: center;
+        }
+        
+        .booking-summary .date-label {
+            font-weight: bold;
+        }
+        
+        .booking-summary hr {
+            margin: 20px 0;
+        }
+        
+        .booking-summary .unit-selection {
+            text-align: center;
+        }
+        
+        .booking-summary .unit-selection h3 {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+
+/*PAGO.html*/
+#cont-pago {
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #e3e6e7;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.label-pago{
+    font-weight: bold;
+}
+
+
+/*BANNER COOKIES*/
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+    display: none; 
+    z-index: 1000; 
+}
+
+.cookie-banner p {
+    margin: 0;
+    padding-right: 15px;
+    display: inline-block;
+}
+
+.cookie-banner a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.cookie-banner a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*Responsive*/
+
+        /* Mobile first, siempre */
+        @media screen and (max-width: 768px) {
+            video {
+                width: 100%;
+            }
+            #cala1, #foto1 {
+                width: 50%;
+                height: 50%;
+                
+            }
+            #parrafo1 {
+            text-align: start;
+            font-size: 10pt;
+            }
+            #parrafo2 {
+                margin-left: 25%;
+                width: 50%;
+                height: 50%;
+                text-align: start;
+                font-size: 10pt;
+            }
+            
+            #cala1 {
+                margin-left: 25%;
+                width: 50%;
+                height: 50%;
+                border-radius:5px;
+            }
+            
+            
+            #foto1  {
+                margin-left: 25%;
+                width: 50%;
+                height: 50%;
+                border-radius:5px;
+            }
+            
+            footer {
+                padding-top: 5px; 
+                padding-bottom: 20px;
+            }
+        }
+
+
+        /*Para pantalla pc*/
+        @media screen and (min-width: 768px) {
+            video {
+                width: 100%;
+            }
+            
+        }
+
+       
+
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casablanca</title>
+    <!--COOKIES-->
+    <link rel="stylesheet" href="pdcc.min.css">
+    <script charset="utf-8" src="pdcc.min.js"></script>
+    <script type="text/javascript">
+    PDCookieConsent.config({
+        "defaultLang": "es",
+        "brand": {
+            "dev": false,
+            "name": "miweb",
+            "url": "http://localhost/Mizrahi_Sarah_Q10/index.html",
+            "websiteOwner": "PRUEBAS"
+        },
+        "cookiePolicyLink": "http://localhost/avisolegal.html",
+        "hideModalIn": ["http://localhost/cookies.php"],
+        "styles": {
+            "primaryButton": {
+                "bgColor": "#A1FFA1",
+                "txtColor": "#036900"
+            },
+            "secondaryButton": {
+                "bgColor": "#EEEEEE",
+                "txtColor": "#333333"
+            }
+        }
+    });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <!--jquery, he tenido que poner los enlaces, los archivos no los coge -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!--Bootstrap via link porque descagrando los archivos y añadiendo la ruta no me funcionaba-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Javascript-->
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <!--CABECERA-->
+    <div class="bg-dark">
+        <header>
+            <p class="text-white">Casablanca</p>
+            <p id="subtitulo">"Home, sweet home"</p>
+        </header>
+    </div>
+    
+    <!--CABECERA MENU-->
+    <nav id="menu">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="alojamientos.html" onclick="redireccionarAlojamientos()">Alojamientos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mapa.html" onclick="redireccionarMapa()">Mapa</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contacto.html" onclick="redireccionarContacto()">Contacto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section>
+        <div id="contenedor-medio">
+            <video autoplay muted loop>
+                <source src="videos/fondo2.mp4" type="video/mp4">
+            </video>
+            <div id="reservar">
+                <input type="text" id="datepicker" placeholder="Entrada">
+                <input type="text" id="datepicker-salida" placeholder="Salida">
+                <input type="number" id="viajeros" placeholder="Número de viajeros">
+                <button id="botonReservar" value="Reservar" onclick="reservar(event)">Reservar</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div id="parrafo1">Bienvenido a nuestro paraíso vacacional, donde tus sueños de escapada se hacen realidad.
+            Descubre nuestro exclusivo catálogo de apartamentos vacacionales junto a la playa
+            con vistas panorámicas al mar, diseñados para ofrecerte la experiencia perfecta durante tus vacaciones.
+            Sumérgete en la serenidad de nuestras ubicaciones costeras, donde el sonido de las olas acariciando la orilla
+            te recibirá cada mañana.
+        </div>
+        <img src="imagenes/cala1.jpg" alt="" id="cala1">
+        <img src="imagenes/foto1.png" alt="" id="foto1">
+        <div id="parrafo2">Explora los encantadores alrededores y sumérgete en la cultura local mientras te deleitas con la deliciosa 
+            gastronomía y descubres los tesoros escondidos de la región. Desde emocionantes actividades al aire libre 
+            hasta relajantes paseos por la costa.
+        </div>
+    </section>
+
+    <!-- Banner de Cookies -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Utilizamos cookies para mejorar su experiencia en nuestro sitio web. Al continuar utilizando este sitio, usted acepta nuestro uso de cookies. <a href="avisolegal.html">Leer más</a>.</p>
+        <button onclick="aceptartCookies()" class="btn btn-primary">Aceptar</button>
+    </div>
+
+    <footer>
+        <p><a href="avisolegal.html" id="condiciones">Aviso Legal</a>Copyright &copy; 2024 Casablanca. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
