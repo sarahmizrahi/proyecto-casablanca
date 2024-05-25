@@ -135,45 +135,32 @@ $(document).ready(function() {
 //CONTACTO.html
 //Ajax para mensaje de Enviado
 function enviarContacto() {
-  // Obtener los datos introducidos
-  var nombre = document.getElementById('nombre').value;
-  var email = document.getElementById('email').value;
-  var mensaje = document.getElementById('mensaje').value;
-
-  // Crear objeto FormData para enviar los datos
-  var formData = new FormData();
-  formData.append('nombre', nombre);
-  formData.append('email', email);
-  formData.append('mensaje', mensaje);
+  var formData = new FormData(document.getElementById('contact-form'));
 
   var xhr = new XMLHttpRequest();
   xhr.open('POST', 'script.php', true);
 
   xhr.onload = function () {
       if (xhr.status >= 200 && xhr.status < 400) {
-          // Mostrar el mensaje del servidor
           document.getElementById('success-message').innerText = xhr.responseText;
           document.getElementById('success-message').style.display = 'block';
 
-          // Borrar los datos introducidos
-          document.getElementById('nombre').value = '';
-          document.getElementById('email').value = '';
-          document.getElementById('mensaje').value = '';
+          // Limpiar el formulario después del envío exitoso
+          document.getElementById('contact-form').reset();
       } else {
-          // Manejar errores
           document.getElementById('success-message').innerText = 'Hubo un error al enviar el mensaje. Inténtalo de nuevo.';
           document.getElementById('success-message').style.display = 'block';
       }
   };
 
   xhr.onerror = function () {
-      // Manejar errores de red
       document.getElementById('success-message').innerText = 'Hubo un error de red. Inténtalo de nuevo.';
       document.getElementById('success-message').style.display = 'block';
   };
 
   xhr.send(formData);
 }
+
 
 
 /*Banner cookies */
